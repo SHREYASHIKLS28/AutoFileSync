@@ -1,7 +1,7 @@
 #!/bin/bash
 
-SOURCE="/mnt/c/Users/91841/Documents/"
-DEST="/home/shreyashikls28/DocumentsToWatch/"
+SOURCE="/mnt/c/Users/Username/Documents/"
+DEST="/home/WSL-USERNAME/DocumentsToWatch/"
 
 while true
 do
