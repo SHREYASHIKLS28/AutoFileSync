@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WATCH_DIR="/mnt/c/Users/91841/Documents" 
+WATCH_DIR="/mnt/c/Users/Username/Documents" 
 
 inotifywait -m -r -e modify,create,delete,move "$WATCH_DIR" |
 while read path action file; do
