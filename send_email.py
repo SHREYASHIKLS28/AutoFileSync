@@ -14,9 +14,9 @@ observer = PollingObserver()
 
 # Email function
 def send_email(message):
-    sender = "shreyashiofficial28@gmail.com"
-    receivers = ["shreyashioff28@gmail.com"]
-    password = "prxzrkqsbnjmqoca"  # App password as string
+    sender = "yourfrom@gmail.com"
+    receivers = ["yourto@gmail.com"]
+    password = "GMAIL_APP_PASSWORD"  # App password as string
 
     if not password:
         print("❌ GMAIL_APP_PASSWORD not loaded.")
@@ -39,9 +39,9 @@ def send_email(message):
         traceback.print_exc()
 
 # Paths
-WATCH_FOLDER = "/home/shreyashikls28/DocumentsToWatch"
+WATCH_FOLDER = "/pathTo/WatchFolder"
 
-BACKUP_DIR = "/mnt/c/Users/91841/DocumentsBackup"
+BACKUP_DIR = "/pathTo/BackupDoc"
 ZIP_PATH = os.path.join(BACKUP_DIR, "backup.zip")
 
 def zip_folder(source_folder, output_zip):
