@@ -1,10 +1,10 @@
 #!/bin/bash
 
 echo "📂 Syncing Documents from Windows..."
-rsync -av --delete /mnt/c/Users/91841/Documents/ /home/shreyashikls28/DocumentsToWatch/
+rsync -av --delete /mnt/c/Users/Username/Documents/ /pathTo/WatchDoc/
 
 echo "☁️ Copying to Google Drive..."
-rclone copy /home/shreyashikls28/DocumentsToWatch/ gdrive:/backup
+rclone copy /home/Username/WatchDoc/ gdrive:/backup
 
 echo "📧 Sending email..."
-python3 /home/shreyashikls28/send_email.py "✅ Backup completed at $(date)"
+python3 /home/Username/send_email.py "✅ Backup completed at $(date)"
